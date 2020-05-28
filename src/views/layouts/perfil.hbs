@@ -1,0 +1,36 @@
+<body>
+  <div class="container-xl my-4" style="width:90%;">
+    <div class="card">
+      <div class="card-head bg-light">
+        <div class="row">
+          <div class="col-xl-3 mx-auto" style="width:50%;">
+             <img class="img-responsive mx-auto" style="width:90%;" src="/img/icon/usuarios.png" alt="Avatar">
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="text-center">Hola <b>{{user.username}}</b>, esta es tu información.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8"style="width:50%;">
+              <br>
+              <p><b>Username</b>: {{user.username}}</p>
+              <p><b>Edad</b>: {{user.edad}} años</p>
+            </div>
+            <div class="col-md-4"style="width:50%;">
+              <p><b>Peso</b>: {{user.peso}} Kg</p>
+              <p><b>Altura</b>: {{user.altura}}m</p>
+              <p><b>IMC</b>: {{user.imc}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 text-center mx-auto"style="width:50%;">
+             <a class="btn btn-danger btn-block" href="/perfil/edit/{{user.id}}">Editar</a>
+          </div>
+        </div>
+    </div>
+    </div>
+    </div>
+  </body>
+  </html>

@@ -1,0 +1,43 @@
+<body>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <div class="card text-center">
+          <div class="card-title my-2">
+            <h2 class="">Regístrate Gratis.</h2>
+          </div>
+          <div class="card-body">
+            <form action="/signup" method="POST">
+              <div class="form-group">
+                <input class="form-control" type="text" name="username" required placeholder="Ingresa tu nombre de usuario">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="password" name="password" required  placeholder="Ingresa tu contraseña">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="password" name="confirme_password"  required placeholder="Confirma tu contraseña">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="number" name="edad" required onkeypress="return soloNumeros(event)" onpaste="return false" placeholder="Ingresa tu edad">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="peso" required  onpaste="return false" placeholder="Ingresa tu peso">
+              </div>
+              <div class="form-group">
+                <input class="form-control"  type="text" name="altura" required onpaste="return false" placeholder="Ingresa tu altura">
+              </div>
+              <div class="form-group">
+                  <input class="form-control btn btn-success" type="submit"  value="Registrarte" name="registrarte">
+              </div>
+              <div class="form-group">
+                <p><b>Ya tienes una cuenta?</b></p>
+                <a class="btn btn-primary" href="/login">Inicia sesión aquí</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/validar.js"></script>

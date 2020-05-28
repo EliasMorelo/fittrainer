@@ -1,0 +1,35 @@
+<body>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-sm-12 p-4">
+        <h1 class="text-center">Fittrainer: Ejercicios a tu alcance.</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <div class="card text-center">
+          <div class="card-title mt-4">
+            <h4 class="">Inicia Sesión.</h4>
+          </div>
+          <div class="card-body">
+            <form action="/login" method="POST">
+              <div class="form-group">
+                <input class="form-control" type="text" required "username" placeholder="Username" autofocus>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" required name="password" placeholder="Contraseña">
+              </div>
+              <div class="form-group">
+                <input class="form-control btn btn-primary" type="submit" value="Iniciar sesión">
+              </div>
+              <div class="form-group">
+                <p><b>Aún no tienes una cuenta?</b></p>
+                <a class="btn btn-success" href="/signup">Registrate aquí</strong></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

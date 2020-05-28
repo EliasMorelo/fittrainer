@@ -1,0 +1,33 @@
+<body>
+  <div class="modal fade" id="cronometro-cuatro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Cronometro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="" action="/informe" method="post">
+            <div>
+              <h1>Cronometro</h1>
+              <h6>Una vez desde click en iniciar deberás hacer las 20 repetiones, tienes 28 segundos para hacerlo, si desear para puedes darle en pausar y volver despues, ¡vamos, tú puedes!.</h6>
+              <label for="formulario" id="tiempo-cuatro" class="d-flex justify-content-center">0.00</label>
+              <input type="text" name="tiempo" value="0.00" id="formulario-cuatro">
+            </div>
+            <div class="btn-group mb-2 d-flex justify-content-center">
+              <button class="btn btn-success mr-2"type="button" name="button" id="iniciar-cuatro">Iniciar/Pausar</button>
+              <input class="btn btn-primary" type="submit"  value="Guardar calorias" name="guardar_datos">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<style media="screen">
+  #formulario-cuatro{
+    display: none;
+  }
+</style>

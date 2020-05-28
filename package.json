@@ -1,0 +1,35 @@
+{
+  "name": "fittrainer",
+  "version": "1.0.0",
+  "description": "Aplicacion sobre rutinas de ejercicios en casa",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "Express",
+    "passport"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "express-mysql-session": "^2.1.4",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.4.0",
+    "moment": "^2.24.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "timeago.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

@@ -1,0 +1,37 @@
+<body>
+  <div class="container-xl my-4" style="width:90%;">
+    <div class="card">
+      <div class="card-head bg-light">
+        <div class="row">
+          <div class="col-xl-3 mx-auto" style="width:50%;">
+             <img class="img-responsive mx-auto" style="width:90%;" src="/img/icon/usuarios.png" alt="Avatar">
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <form class="" action="/perfil/edit/{{user.id}}" method="post">
+          <p class="text-center">Hola <b>{{user.username}}</b>, esta es tu información.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8"style="width:50%;">
+                <br>
+                <p><b>Username</b>: <input type="text" name="username" value="{{user.username}}"> </p>
+                <p><b>Edad</b>: <input type="text" name="edad" value="{{user.edad}}"></p>
+              </div>
+              <div class="col-md-4"style="width:50%;">
+                <p><b>Peso</b>: <input type="text" name="peso" value="{{user.peso}}"></p>
+                <p><b>Altura</b>: <input type="text" name="altura" value="{{user.altura}}"> </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 text-center mx-auto"style="width:50%;">
+               <input type="submit" class="btn btn-success btn-block" value="Guardar" name="guardar">
+            </div>
+          </div>
+        </form>
+    </div>
+    </div>
+    </div>
+  </body>
+  </html>
